@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'CursiveFont', cursive;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('r2back.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #2C3E50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #16A085;
+        }
+
+        p {
+            color: #34495E;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .benefits-section {
+            background-color: #ECF0F1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .benefits-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefits-section ul li::before {
+            content: '\2022';
+            color: #E74C3C;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        h2 {
+            color: #E74C3C;
+        }
+
+        .exercise-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .exercise-link {
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #27AE60;
+            color: #27AE60;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .exercise-link:hover {
+            background-color: #27AE60;
+            color: white;
+        }
+    </style>
+    <title>Ayurvedic Lifestyle</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Yoga Lifestyle</h1>
+        <div class="video-container">
+            <!-- Replace 'VIDEO_ID' with actual YouTube video IDs -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="benefits-section">
+            <h2>Yoga Benefits and Tips</h2>
+            <ul>
+                <li>Improved flexibility and strength</li>
+                <li>Stress relief and relaxation</li>
+                <li>Enhanced mental focus and concentration</li>
+                <li>Better posture and body awareness</li>
+                <li>Increased energy and vitality</li>
+                <li>Boosted immune system</li>
+                <li>Improved respiratory function</li>
+                <li>Enhanced cardiovascular health</li>
+                <li>Detoxification of the body</li>
+                <li>Promotion of emotional well-being</li>
+                <li>Optimized sleep quality</li>
+                <li>Balanced hormonal function</li>
+                <li>Support for weight management</li>
+                <li>Increased mindfulness and awareness</li>
+                <li>Positive impact on mental health</li>
+                <li>Enhanced spiritual well-being</li>
+                <li>Alleviation of chronic pain</li>
+                <li>Improved digestive health</li>
+                <li>Optimized overall well-being</li>
+            </ul>
+        </div>
+        <h2>Yoga Exercise Videos</h2>
+        <div class="exercise-links">
+           
+            <a class="exercise-link" href="EXERCISE_VIDEO_LINK_1" target="_blank">Exercise 1</a>
+            <a class="exercise-link" href="EXERCISE_VIDEO_LINK_2" target="_blank">Exercise 2</a>
+            <a class="exercise-link" href="EXERCISE_VIDEO_LINK_3" target="_blank">Exercise 3</a>
+        </div>
+    </div>
+</body>
+
+</html>
+

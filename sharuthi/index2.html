@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('homeb.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      margin: 0;
+      padding: 0;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+    }
+
+        .container {
+            max-width: 1000px; /* Increased max-width */
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .navbar a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        @media screen and (max-width: 500px) {
+            .navbar a {
+                float: none;
+                display: block;
+            }
+
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+                font-size: 17px;
+            }
+        }
+
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+
+        <a href="index4.html" id="searchButton"><i class="fa fa-fw fa-search"></i> Search</a>
+
+        <a href="index5.html" id="searchButton"><i class="fa fa-fw fa-user"></i> Doctor</a>
+
+       
+
+        <a href="index7.html" id="searchButton"><i class="fa fa-fw fa-user"></i>Diet Plan</a>
+
+        <a href="#"><i class="fa-user-md"></i> Contact</a>
+
+        <a href="#"><i class="fa fa-fw fa-user"></i> Log Out
+        </a>
+
+    </div>
+
+    <div class="container">
+        <p>
+            <h3>
+                Healthcare is a dynamic and essential aspect of our lives, encompassing a broad spectrum of services,
+                professionals, and practices dedicated to maintaining and improving overall well-being. The field of
+                healthcare is constantly evolving, driven by advancements in medical science, technology, and a growing
+                understanding of the interconnectedness of physical, mental, and social health.
+
+                One cornerstone of healthcare is preventive care, emphasizing the importance of maintaining a healthy
+                lifestyle to prevent illnesses before they occur. This includes regular check-ups, vaccinations, and
+                lifestyle modifications such as proper nutrition, regular exercise, and stress management.
+
+                In the realm of medical treatment, healthcare professionals work tirelessly to diagnose and address a
+                myriad of conditions. Doctors, nurses, and specialists collaborate to provide personalized care,
+                leveraging cutting-edge medical technologies and evidence-based practices. From routine procedures to
+                complex surgeries, the goal is to restore health and improve the quality of life for patients.
+
+                Mental health is an integral component of overall well-being, and the healthcare system is increasingly
+                recognizing its significance. Mental health professionals, including psychologists and psychiatrists,
+                play a crucial role in addressing conditions such as anxiety, depression, and other mental health
+                disorders. The integration of mental health services into the broader healthcare framework reflects a
+                holistic approach to patient care.
+
+                The healthcare industry also extends its reach into public health initiatives, focusing on community-level
+                interventions to promote health and prevent diseases. This includes awareness campaigns, vaccination
+                drives, and efforts to address social determinants of health, such as access to education, housing, and
+                clean environments.
+
+                Technological innovations, such as telemedicine and electronic health records, have transformed the
+                delivery of healthcare services, making them more accessible and efficient. Patients can now connect with
+                healthcare providers remotely, and medical information can be securely shared across different healthcare
+                settings, facilitating seamless and coordinated care.
+
+                Challenges persist within the healthcare landscape, including issues of accessibility, affordability, and
+                disparities in healthcare outcomes. Efforts to address these challenges involve policy initiatives,
+                community engagement, and a commitment to fostering a healthcare system that is inclusive and equitable.
+
+                In conclusion, healthcare is a multifaceted and evolving domain that touches every aspect of our lives.
+                Whether it's promoting a healthy lifestyle, diagnosing and treating illnesses, or addressing mental
+                health needs, healthcare professionals work collaboratively to ensure individuals and communities can
+                lead healthier and more fulfilling lives.
+            </h3>
+        </p>
+    </div>
+
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+</body>
+
+</html>

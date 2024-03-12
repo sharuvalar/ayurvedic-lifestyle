@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        .zoom-link,
+        .review-section {
+            margin-top: 20px;
+        }
+
+        .zoom-link label,
+        .review-section label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .review-stars {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .review-stars label {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .review-stars input {
+            display: none;
+        }
+
+        .review-stars span {
+            font-size: 25px;
+            color: #f39c12;
+            cursor: pointer;
+        }
+
+        .review-stars input:checked~span:before {
+            content: '\2605'; /* Solid star character */
+        }
+
+        .review-stars span:before {
+            content: '\2606'; /* Empty star character */
+        }
+
+        .review-comment {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .review-buttons button {
+            background-color: #2ecc71;
+            margin-right: 10px;
+        }
+
+        .review-buttons button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+    <title>Doctor Appointment Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Doctor Appointment Form</h1>
+        <form>
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="appointmentDate">Preferred Appointment Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="zoomLink">Zoom Meeting Link:</label>
+            <input type="text" id="zoomLink" name="zoomLink" placeholder="Enter Zoom Meeting Link">
+
+            <button type="submit">Submit Appointment</button>
+        </form>
+
+        <div class="zoom-link">
+            <label for="zoomLinkDisplay">Your Zoom Meeting Link:</label>
+            <input type="text" id="zoomLinkDisplay" name="zoomLinkDisplay" readonly>
+        </div>
+
+        <div class="review-section">
+            <h2>Review the Doctor</h2>
+            <div class="review-stars">
+                <input type="radio" id="star5" name="rating" value="5"><span></span>
+                <input type="radio" id="star4" name="rating" value="4"><span></span>
+                <input type="radio" id="star3" name="rating" value="3"><span></span>
+                <input type="radio" id="star2" name="rating" value="2"><span></span>
+                <input type="radio" id="star1" name="rating" value="1"><span></span>
+            </div>
+            <label for="reviewComment">Leave a Comment:</label>
+            <textarea id="reviewComment" name="reviewComment" class="review-comment"></textarea>
+            <div class="review-buttons">
+                <button onclick="submitReview()">Submit Review</button>
+                <button onclick="openReviewForm('doctor2')">Review Doctor 2</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function submitReview() {
+            const rating = document.querySelector('input[name="rating"]:checked');
+            const comment = document.getElementById('reviewComment').value;
+            if (rating && comment) {
+                alert(`Thank you for your review!\nRating: ${rating.value}\nComment: ${comment}`);
+                // Implement logic to send the review data to the server/database
+            } else {
+                alert('Please provide a rating and a comment before submitting the review.');
+            }
+        }
+
+        function openReviewForm(doctorName) {
+            // Implement logic to open a review form for the selected doctor
+            alert(`Review form for ${doctorName}`);
+        }
+    </script>
+</body>
+
+</html>

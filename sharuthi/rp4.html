@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'CursiveFont', cursive;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image: url('r2back.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #2C3E50;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #16A085;
+        }
+
+        p {
+            color: #34495E;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .benefits-section {
+            background-color: #ECF0F1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .benefits-section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .benefits-section ul li::before {
+            content: '\2022';
+            color: #E74C3C;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        h2 {
+            color: #E74C3C;
+        }
+
+        .recipe-links {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .recipe-link {
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #27AE60;
+            color: #27AE60;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .recipe-link:hover {
+            background-color: #27AE60;
+            color: white;
+        }
+    </style>
+    <title>Ayurvedic Lifestyle</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Ayurvedic Food Lifestyle</h1>
+        <div class="video-container">
+            <!-- Replace 'VIDEO_ID' with actual YouTube video IDs -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+        <div class="benefits-section">
+            <h2>Ayurvedic Foods and Recipe Tips</h2>
+            <ul>
+                <li>Introduction to Ayurvedic cooking principles</li>
+                <li>Use of seasonal and local ingredients</li>
+                <li>Balance of six tastes in every meal (sweet, sour, salty, pungent, bitter, astringent)</li>
+                <li>Importance of mindful eating</li>
+                <li>Recipes for dosha-balancing meals</li>
+                <li>Creating harmony with Ayurvedic spices</li>
+                <li>Enhancing digestion through food choices</li>
+                <li>Recipes for Ayurvedic drinks and herbal teas</li>
+                <li>Adapting Ayurvedic principles to modern lifestyles</li>
+                <li>Understanding individual constitutions (doshas)</li>
+                <li>Cooking methods for optimal health benefits</li>
+                <li>Recipe ideas for breakfast, lunch, and dinner</li>
+                <li>Using Ayurvedic herbs in everyday cooking</li>
+                <li>Recipes for Ayurvedic desserts and sweets</li>
+                <li>Promoting balance and wellness through food</li>
+                <li>Quick and easy Ayurvedic recipes for busy days</li>
+                <li>Exploring the Ayurvedic approach to vegetarian and non-vegetarian meals</li>
+                <li>Sharing Ayurvedic cooking experiences and success stories</li>
+                <li>Celebrating the connection between food, mind, and body</li>
+                <li>Encouraging a sustainable and mindful approach to food choices</li>
+            </ul>
+        </div>
+        <h2>Ayurvedic Recipe Videos</h2>
+        <div class="recipe-links">
+            <!-- Replace 'RECIPE_VIDEO_LINK' with actual recipe video links -->
+            <a class="recipe-link" href="RECIPE_VIDEO_LINK_1" target="_blank">Recipe 1</a>
+            <a class="recipe-link" href="RECIPE_VIDEO_LINK_2" target="_blank">Recipe 2</a>
+            <a class="recipe-link" href="RECIPE_VIDEO_LINK_3" target="_blank">Recipe 3</a>
+        </div>
+    </div>
+</body>
+
+</html>

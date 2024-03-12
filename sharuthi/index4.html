@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+            background-image: url('i4back.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        /* Center website */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row {
+            margin: 8px -16px;
+        }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        /* Create four equal columns that float next to each other */
+        .column {
+            float: left;
+            width: 25%;
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+        /* Responsive layout - makes a two-column layout instead of four columns */
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+
+        /* Register button */
+        .register-btn {
+            display: block;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <h1>AYURVEDICHEALING.COM</h1>
+        <hr>
+
+        <h2 style="text-align: center;">AYURVEDIC</h2>
+       
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <img src="i41.jpeg" alt="Ayurvedic Herbs" style="width:100%">
+                    <h3>Ayurvedic Herbs</h3>
+                    <p>Discover the power of Ayurvedic herbs for holistic healing. Learn about the benefits of various herbs
+                        and their traditional uses in Ayurveda.</p>
+                        <a href="rp1.html" class="register-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="i42.jpeg" alt="Ayurvedic Lifestyle" style="width:100%">
+                    <h3>Ayurvedic Lifestyle</h3>
+                    <p>Embrace the Ayurvedic way of life. Explore practices that promote balance, including mindful eating,
+                        daily routines, and seasonal adjustments.</p>
+                        <a href="rp2.html" class="register-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="i43.jpeg" alt="Ayurvedic Wellness" style="width:100%">
+                    <h3>Ayurvedic Wellness</h3>
+                    <p>Nourish your body, mind, and spirit with Ayurvedic wellness practices. Discover personalized routines
+                        and self-care techniques for optimal health.</p>
+                        <a href="rp3.html" class="register-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <img src="i44.jpeg" alt="Ayurvedic Recipes" style="width:100%">
+                    <h3>Ayurvedic Recipes</h3>
+                    <p>Experience the flavors of Ayurveda with wholesome recipes. Explore nutritious and delicious meals
+                        that align with Ayurvedic principles.</p>
+                        <a href="rp4.html" class="register-btn">Learn More</a>
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+
+        <div class="content">
+            <img src="i45.jpeg" alt="Ayurvedic Remedies" style="width:100%">
+            <h3>Ayurvedic Remedies</h3>
+            <p>Explore natural Ayurvedic remedies for common ailments. Learn how to use herbs, spices, and simple
+                practices to support your well-being.</p>
+            <p>Discover the wisdom of Ayurveda and unlock the secrets to a balanced and harmonious life.</p>
+            <a href="rp5.html" class="register-btn">Learn More</a>
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+</body>
+
+</html>
